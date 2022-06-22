@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body background="imagenes/fondo.jpg">
+    <div class="encabezado">
+        <div class="logo">
+            <img class="imagenlogo" src="imagenes/logo.jpg" alt="logo">
+        </div>
+        <a class="nombre" href="index.html">
+            <div>
+                <h1> Mini Dulces Placeres</h1>
+                <p>Empresa familiar dedicada a la elaboracion de delicadeses dulces</p>
+            </div>
+        </a>
+    </div>
+    <nav>
+        <ul class="barra">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li class="barramenu"><a href="insumos.html">Insumos</a></li>
+            <li><a href="formulario.html" target="_blank">Contacto</a></li>
+        </ul>
+    </nav>
+    <form class="contenedorgeneral" name="pedido" id="pedido">
+        <div class="contenedor">
+            <div class="contenedorhijo_pedido">
+                <label>Nombre</label>
+                <input type="text" name="nombre" id="nombre" value="" placeholder="Ingrese su nombre *">
+                <label>Apellido</label>
+                <input type="text" name="apellido" id="apellido" value="" placeholder="Ingrese su apellido *">
+                <label>Email</label>
+                <input type="mail" name="mail" value="" id="mail" pattern=".+@hotmail\.com"
+                    placeholder="Ingrese su correo hotmail">
+            </div>
+            <div class="contenedorhijo_pedido" id="id_productos">
+                <select name="Elija el producto que desea comprar" id="nivel">
+                    <option value="seleccion">Seleccione un producto</option>
+                    <option id="bombones" value="bombonesc">Bombones rellenos comunes</option>
+                    <option value="bombonese">Bombones especiales</option>
+                    <option value="cookies">Cookies</option>
+                    <option value="macarrones">Macarrones</option>
+                    <option value="masascomunes">Masas dulce de leche</option>
+                    <option value="masassurtidas">Masas surtidas</option>
+                </select>
+            </div>
+            <div class="contenedorhijo_pedido">
+                <div class="centrado checkinvisible" id="cookies">
+                    <div>
+                        <input type="checkbox" name="variedadcookies" value="chispas" class="variedadcookies"><label class="letrapequeña">Chispas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadcookies" value="arandanos" class="variedadcookies"><label class="letrapequeña">Arandanos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadcookies" value="nueces" class="variedadcookies"><label class="letrapequeña">Nueces</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadcookies" value="almendras" class="variedadcookies"><label class="letrapequeña">Almendras</label>
+                    </div>
+                </div>
+                <div class=" centrado checkinvisible" id="macarrones">
+                    <div>
+                        <input type="checkbox" name="variedadmacarrones" value="chocolate"><label class="letramediana">Chocolate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmacarrones" value="Pistachos"><label class="letramediana">Pistachos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmacarrones" value="naranja"><label class="letramediana">Naranja</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmacarrones" value="limon"><label class="letramediana">Limon</label>
+                    </div>
+                </div>
+                <div class="centrado checkinvisible" id="masassurtidas">
+                    <div>
+                        <input type="checkbox" name="variedadmasas" value="dulce"><label class="letrapequeña">Dulce de Leche</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmasas" value="crema"><label class="letrapequeña">Crema Pastelera</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmasas" value="mermelada">
+                        <label class="letrapequeña">Mermeladas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variedadmasas" value="chocolate"><label class="letrapequeña">Chocolate</label>
+                    </div>
+                </div>
+            </div>
+            <div class="centrado" id="cantidad">
+                <label>Cantidad</label>
+                <div>
+                    <input type="radio" id="kilo" name="peso" value="1"> <label class="letragrande">1Kg</label>
+                </div>
+                <div>
+                    <input type="radio" id="kilox5" name="peso" value="5"> <label class="letragrande">5Kg</label>
+                </div>
+            </div>
+            <div class="contenedorhijo_pedido botonenviar">
+                <button class="colorbotones" type="button" id="enviarpedido">Enviar Pedido</button>
+            </div>
+        </div>
+        <div class="contenedor">
+            <img class="visible_error imagen_error" src="imagenes/error.jpg" id="error_img" alt="error">
+            <label class="visible_error mensaje_error" id="mensaje_error">Debe completar todos los campos</label>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/formulario_pedido.js"></script>
+</body>
+<footer class="piedepagina">
+    <div>
+        <p> Esta pagina esta siendo dise&ntildeada por Ana Paula Fiscina y Juan Francisco Enriquez</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consultanos</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+</head>
+
+<body background="imagenes/fondo.jpg">
+    <div class="encabezado">
+        <div class="logo">
+            <img class="imagenlogo" src="imagenes/logo.jpg" alt="logo">
+        </div>
+        <a class="nombre" href="index.html">
+            <div>
+                <h1> Mini Dulces Placeres</h1>
+                <p>Empresa familiar dedicada a la elaboracion de delicadeses dulces</p>
+            </div>
+        </a>
+    </div>
+    <nav>
+        <ul class="barra">
+            <li class="barramenu"><a href="index.html">Inicio</a></li>
+            <li class="barramenu"><a href="productos.html">Productos</a></li>
+            <li class="barramenu"><a href="pedido.html">Pedido</a></li>
+            <li class="barramenu"><a href="insumos.html">Insumos</a></li>
+            <li class="barramenu"><a href="formulario.html" target="_blank">Contacto</a></li>
+        </ul>
+    </nav>
+    <form name="form_Contacto" id="form_Contacto">
+        <div class="contenedorgeneral_consulta">
+            <div class="contenedorsecundario_consulta">
+                <div class="contenedorhijo">
+                    <label>Contactos</label>
+                </div>
+                <div class="organizacionfototexto_contactos">
+                    <img class="imagencontactos" src="imagenes/logowhatsapp.png" alt="whatsapp">
+                    <label>Whatsapp: 2262-539999</label>
+                </div>
+                <div class="organizacionfototexto_contactos">
+                    <img class="imagencontactos" src="imagenes/logofacebook.png" alt="Facebook">
+                    <label>MiniDulcesPlaceres</label>
+                </div>
+                <div class="organizacionfototexto_contactos">
+                    <img class="imagencontactos" src="imagenes/logoinstagram.jpg" alt="Instagram">
+                    <label>#MiniDulcesPlaceres</label>
+                </div>
+            </div>
+            <div class="contenedorsecundario_consulta">
+                <div class="contenedorhijo">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" size="35" value=""
+                        placeholder="Ingrese su nombre y apellido">
+                </div>
+                <div class="contenedorhijo"><label>Email</label>
+                    <input type="text" name="nombre" id="mail" placeholder="Ingrese su correo">
+                </div>
+                <div class="contenedorhijo"><label>Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" size="30"
+                        placeholder="Ingrese su telefono (OPCIONAL)">
+                </div>
+                <div class="contenedor_textarea">
+                    <label>Ingrese su consulta</label>
+                    <textarea name="consulta" id="consulta" cols="40" rows="3" placeholder="Ingrese su consulta"></textarea>
+                </div>
+                <div class="contenedorhijo">
+                    <label id="captcha"></label>
+                </div>
+                <div class="contenedorhijo">
+                    <input type="text" id="texto_ing" size="40"
+                        placeholder="Ingrese el codigo y luego presione en validar">
+                </div>
+                <div class="contenedorhijo">
+                    <button type="button" class="colorbotones" id="boton_captcha">Validar y Enviar"</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/formulario_consulta.js"></script>
+</body>
+<footer class="piedepagina">
+    <div>
+        <p> Esta pagina esta siendo dise&ntildeada por Ana Paula Fiscina y Juan Francisco Enriquez</p>
+    </div>
+</footer>
+
+</html>

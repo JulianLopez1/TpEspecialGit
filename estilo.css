@@ -1,0 +1,306 @@
+/* Este codigo pertenece al Index */
+
+h1{
+    margin: 9px;
+}
+.fototexto{
+    display: flex;
+}
+ .tamano{
+padding: 0px 100px 100px 0px;
+} 
+.organizacion{
+    display:flexbox;
+    border: 30px;
+    padding: 30px;
+}
+.organizacionfototexto{
+    display: flex;
+    justify-content: center;  
+    border: 30px;
+}
+.imagen{
+    size: auto;
+}
+.encabezado{
+    height:15% ;
+    width:100% ;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    height:15%;
+    width: 15%;
+}
+.imagenlogo{
+    width: 100%;
+    height: 100%;
+}
+.nombre{
+    font-size: xx-large;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    background-color: rgb(241, 252, 248);
+    text-align: center;
+}
+.encabezadonombre{
+    width: 70%;
+    height: 200px;
+}
+.barra{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color: aquamarine; 
+    color: rgb(255, 60, 0);
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 60, 0);
+}
+
+li{
+    padding: 0 30px;
+    border: 0 25px;
+}
+
+.barramenu:hover{background-color: rgb(9, 126, 87);  
+}
+
+.piedepagina{
+    height: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+
+/* Este codigo pertenece al formulario de pedido */
+
+.centrado{
+    display:flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+
+.contenedorgeneral{
+    display: flex;
+    color: blue;
+    padding: 0% 5% 0% 5%;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    padding: 0% 0% 5% 5%;
+}
+.contenedorhijo{
+    padding: 1%;
+    border-bottom:1%;
+}
+.contenedor_textarea{
+    display: flex;
+    padding: 1%;
+    border-bottom:1%;
+}
+.contenedorhijo_pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.imagen_error{
+    width: 35%;
+    height: 50%;
+}
+
+.visible_error{
+    visibility: hidden;
+}
+.mensaje_error{
+    text-align: left;
+    color: crimson;
+}
+
+
+/* Este codigo solo pertenece a Productos */
+
+.contenedortabla{
+    padding: 10px;
+    font-size:larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: bisque;
+}
+p{
+    margin: 0%;
+}
+.productostabla{
+    display: flex;
+    flex-direction: row;
+}
+.tabla{
+    width: 30%;
+     display: flex;
+     flex-direction:column;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 50%;
+    
+}
+.detalleproducto{
+    margin:20px;
+    width: 50%;
+    height: 50%;
+    border: 10px;
+    padding: 10px; 
+    color: blue;
+    background-color:rgb(247, 189, 233);
+    font-size:large;
+} 
+.contienedetalle{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+}
+.listas_Productos{
+    font-size: small;
+    color: blue;
+}
+.titulodetalleproducto{
+    color: black;
+}
+
+.checkinvisible{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.cantidadinvisible{
+    visibility: hidden;
+}
+.letragrande{
+    font-size: x-large;
+    font-style: italic;
+    font: bold;
+}
+.letramediana{
+    color: blue;
+    font-size: large;
+    font: bolder;
+}
+.letrapequeña{
+    color: blue;
+    font-size: medium;
+    font: bolder;
+}
+
+/* Este codigo pertenece al formulario de consulta*/
+
+.botonenviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+label{
+    text-align: center;
+    font-size:x-large;
+    }
+
+.contenedorgeneral_consulta{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 20%;
+    color: blue;
+    padding: 0% 5% 0% 5%;
+    border: 2% rgb(245, 175, 26);
+}
+.contenedorsecundario_consulta{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    height:100%;
+
+}
+.colorbotones{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font: bold;
+}
+
+.imagencontactos{
+    width: 12%;
+    height: 85%;
+}
+.organizacionfototexto_contactos{
+    display: flex;
+    justify-content:flex-start;  
+    align-items: center;
+    border: 5%;
+}
+
+
+
+/* Este codigo pertenece al html de insumos*/
+
+.formato_insumos{
+    padding: 2% 2% 2% 2%;
+}
+.contenedortablaInsumos{
+    display: flex;
+    flex-direction:column ;
+}
+table.tablaInsumos {
+    margin: 5px;
+    width: 60% ;
+    background-color: rgb(240, 28, 176);
+    text-align: center;
+    flex-direction: column;
+    
+}
+thead.tablaInsumos {
+    background-color: bisque;
+    border:solid 3px black ;
+    border-bottom: 1px;
+
+}
+tr td {
+    background-color:rgb(139, 243, 243) ;
+    border-collapse: separate;
+    border:solid 3px black ;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-right: 1px;
+    border-left: 1px;
+}
+@media screen and (max-width: 660px) {
+    .barra{
+ display: none;
+    }
+    
+}
+
+html{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+   font-style: italic;
+}

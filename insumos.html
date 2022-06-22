@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Dulces Placeres</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body background="imagenes/fondo.jpg">
+    <div class="encabezado">
+        <div class="logo">
+            <img class="imagenlogo" src="imagenes/logo.jpg" alt="logo">
+        </div>
+        <a class="nombre" href="index.html">
+            <div>
+                <h1> Mini Dulces Placeres</h1>
+                <p>Empresa familiar dedicada a la elaboracion de delicadeses dulces</p>
+            </div>
+        </a>
+    </div>
+    <nav>
+        <ul class="barra">
+            <li class="barramenu"><a href="index.html">Inicio</a></li>
+            <li class="barramenu"><a href="productos.html">Productos</a></li>
+            <li class="barramenu"><a href="pedido.html">Pedido</a></li>
+            <li class="barramenu"><a href="insumos.html">Insumos</a></li>
+            <li class="barramenu"><a href="formulario.html" target="_blank">Contacto</a></li>
+        </ul>
+    </nav>
+    <form id="formulario_ins">
+        <div class="centrado">
+            <div class>
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label>Proveedor</label>
+                <input type="text" id="proveedor">
+            </div>
+            <div>
+                <label>Cantidad</label>
+                <input type="number" id="cantidad">
+            </div>
+            <div>
+                <label>Precio Unitario</label>
+                <input type="number" id="precio_unitario">
+            </div>
+        </div>
+        <div class="formato_insumos">
+            <button type="button" id="agrega">Agregar</button>
+             <button type="button" id="triplica">Agregar x 3</button>
+             <label>Buscar</label>
+             <input type="text" placeholder="Ingrese el nombre a buscar" id="text_buscar">
+             <button type="button" id="buscar">Realizar busqueda</button>
+        </div>
+        </form>
+        <div class="contenedortablaInsumos">
+            <table class="tablaInsumos">
+                <thead class="tablaInsumos" >
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Proveedor</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_insumos">
+                    
+                </tbody>
+            </table>
+        </div>
+    <script type="text/javascript" src="js/formulario_insumos.js"></script>
+</body>
+<footer class="piedepagina">
+    <div>
+        <p> Esta pagina esta siendo dise&ntildeada por Ana Paula Fiscina y Juan Francisco Enriquez</p>
+    </div>
+</footer>
+
+</html>
