@@ -1,5 +1,5 @@
 document.getElementById('agrega').addEventListener('click', agregarProducto);
-document.getElementById('triplica').addEventListener('click', agregar3);
+
 let fila_numero = 0;
 const url = 'https://6195bfdf74c1bd00176c6e63.mockapi.io/productos/';
 let botonBuscar = document.getElementById("buscar").addEventListener("click", filtrar);
@@ -7,12 +7,12 @@ let botonBuscar = document.getElementById("buscar").addEventListener("click", fi
 // esta funcion agrega un producto al servicio
 async function agregarProducto() {
     let nombre = document.querySelector('#nombre').value;
-    let proveedor = document.querySelector('#proveedor').value;
+    let apellido = document.querySelector('#apellido').value;
     let stock = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio_unitario').value;
     let item = {
         "nombre": nombre,
-        "proveedor": proveedor,
+        "apellido": apellido,
         "stock": stock,
         "precio": precio,
     }
@@ -37,7 +37,7 @@ function editar() {
     let idModificar = this.getAttribute("editid");
     let tabla = document.getElementById("tabla_insumos");
     document.getElementById("nombre").value = tabla.rows[fila].cells[0].textContent;
-    document.getElementById("proveedor").value = tabla.rows[fila].cells[1].textContent;
+    document.getElementById("apellido").value = tabla.rows[fila].cells[1].textContent;
     document.getElementById("cantidad").value = parseInt(tabla.rows[fila].cells[2].textContent, 10);
     document.getElementById("precio_unitario").value = parseInt(tabla.rows[fila].cells[3].textContent, 10);
     tabla.rows[fila].cells[4].innerHTML = `
@@ -57,12 +57,7 @@ function cancelar() {
     refrescar();
 }
 
-// esta funcion agrega un producto x 3 al servicio
-async function agregar3() {
-    for (i = 0; i < 3; i++) {
-        setTimeout(agregarProducto, 5000)
-    }
-}
+
 
 // esta funcion llama al servicio y muestra todos los datos
 async function refrescar() {
@@ -87,7 +82,7 @@ function listar(elementos) {
         tabla.innerHTML += `
        <tr>
           <td>${elementos[i].nombre}</td>
-           <td>${elementos[i].proveedor}</td>
+           <td>${elementos[i].apellido}</td>
            <td>${elementos[i].stock}</td>
            <td>${elementos[i].precio}</td>
            <td>
@@ -136,13 +131,13 @@ async function eliminar() {
 // esta funcion modifica un registro y actualiza
 async function modificar() {
     let nombre = document.querySelector('#nombre').value;
-    let proveedor = document.querySelector('#proveedor').value;
+    let proveedor = document.querySelector('#apellido').value;
     let stock = document.querySelector('#cantidad').value;
     let precio = document.querySelector('#precio_unitario').value;
     let id = this.getAttribute('idMod');
     let item = {
         "nombre": nombre,
-        "proveedor": proveedor,
+        "apellido": apellido,
         "stock": stock,
         "precio": precio,
     }
@@ -161,7 +156,7 @@ async function modificar() {
         console.log(error);
     }
     document.querySelector('#nombre').value = " ";
-    document.querySelector('#proveedor').value = " ";
+    document.querySelector('#apellido').value = " ";
     document.querySelector('#cantidad').value = " ";
     document.querySelector('#precio_unitario').value = " ";
 }
@@ -192,7 +187,7 @@ async function buscar(elementos) {
             tabla2.innerHTML += `     
                 <tr>
                 <td>${elementos[i].nombre}</td>
-                <td>${elementos[i].proveedor}</td>
+                <td>${elementos[i].apellido}</td>
                 <td>${elementos[i].stock}</td>
                 <td>${elementos[i].precio}</td>
                 <td>
