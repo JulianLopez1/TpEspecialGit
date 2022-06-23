@@ -39,8 +39,8 @@ padding: 0px 100px 100px 0px;
 .nombre{
     font-size: xx-large;
     width: 100%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
-    background-color: rgb(241, 252, 248);
+    font-family: 'Times New Roman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    background-color: rgb(241 252 248 / 0%);
     text-align: center;
 }
 .encabezadonombre{
