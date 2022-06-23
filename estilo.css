@@ -273,19 +273,19 @@ label{
 table.tablaInsumos {
     margin: 5px;
     width: 60% ;
-    background-color: rgb(240, 28, 176);
+    background-color: rgb(240, 28, 28);
     text-align: center;
     flex-direction: column;
     
 }
 thead.tablaInsumos {
-    background-color: bisque;
+    background-color: rgb(255, 223, 196);
     border:solid 3px black ;
     border-bottom: 1px;
 
 }
 tr td {
-    background-color:rgb(139, 243, 243) ;
+    background-color:rgb(214, 139, 243) ;
     border-collapse: separate;
     border:solid 3px black ;
     border-top: 1px;
